@@ -43,7 +43,7 @@
   --special-button-hover-border: #000000;
 }
 
-.button-theme {
+#button-theme {
   padding: 15px;;
   border-radius: 50%;
   background-color: var(--special-button-bg);
@@ -52,18 +52,19 @@
   font-weight: bold;
 }
 
-.button-theme:hover {
+#button-theme:hover {
   background-color: var(--special-button-hover-bg);
   color: var(--special-button-hover-text);
   border: 1px dashed var(--special-button-hover-border);
 }
 
 
-
 /*---------------------------------- GENERAL----------------------------------*/
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -84,13 +85,17 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   font-family: 'Erode', serif;
-  margin: 0;
-  padding: 0;
   height: 100vh;
 }
 
 
 /*---------------------------------- FONTS ----------------------------------*/
+h1 {
+  font-size: 50px;
+  color: transparent;
+  margin-bottom: 20px;
+  -webkit-text-stroke: var(--border) 1px;
+}
 
 h2 {
   font-size: 25px;
@@ -98,6 +103,16 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
 
 
 /*---------------------------------- HEADER ----------------------------------*/
@@ -153,12 +168,9 @@ header ul li a:hover {
   text-decoration: underline;
 }
 
-.button-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-}
+
+
+
 
 header .fab.fa-node {
   font-size: 150px;
@@ -193,6 +205,13 @@ main {
     0px 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+.main-card p {
+  color: var(--text-color);
+}
+
+.main-card a {
+  color: var(--text-color)
+}
 /*---------------------------------- FOOTER ----------------------------------*/
 
 footer {
@@ -212,6 +231,19 @@ footer p {
 }
 
 /*---------------------------------- INDEX ----------------------------------*/
+
+.hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+.hero img {
+  width: 700px;
+  height: auto;
+  border: 2px solid var(--border);
+}
+
 
 
 
@@ -296,9 +328,27 @@ button[type="submit"]:hover {
     height: 220px;
   }
 
-  nav ul {
-    gap: 10px;
+  header ul {
+    gap: 15px;
   }
+
+  header nav ul a {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .hero img {
+    width: 300px;
+  }
+
+  main p {
+    font-size: 15px;
+  }
+
+
 
   .main-card {
     width: 300px;

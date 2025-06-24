@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-propos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>A propos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=erodek@400&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-    <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container">
-            <div class="responsive-container-block leftSide">
-                <p class="text-blk heading">
-                    Rencontrez notre équipe créative
-                </p>
-                <p class="text-blk subHeading">
-                    Semaj Africa is an online education platform that delivers video courses, programs and resources for
-                    Individual, Advertising &amp; Media Specialist, Online Marketing Professionals, Freelancers and
-                    anyone looking to pursue a career in digital marketing, Accounting, Web development, Programming.
-                    Multimedia and CAD design.
-                </p>
-            </div>
-            <div class="responsive-container-block rightSide">
-                <img class="number1img"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET32.jpg">
-                <img class="number2img"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d14.png">
-                <img class="number3img"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b245.png">
-                <img class="number5img"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Customer supports.png">
-                <iframe allowfullscreen="allowfullscreen" class="number4vid"
-                    poster="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png"
-                    src="https://www.youtube.com/embed/svg%3E?">
-                </iframe>
-                <img class="number7img"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d51.png">
-                <img class="number6img"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d12.png">
-            </div>
-        </div>
-    </div>
 
+
+<body class="page-container background-grid">
+    <header>
+        <div class="logo"><i class="fab fa-node"></i></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="button-theme"><i class="bi bi-moon"></i></button>
+      </header>
+
+
+    <main>
+
+        <div class="main-card">
+            <h2><i>À propos de nous</i></h2>
+            <p>Nous sommes un groupe de passionnés de développement web, composé de Jon, Damien et Nihad. Notre objectif est de créer des applications web innovantes et accessibles à tous.</p>
+            <p>Notre équipe est dédiée à l'apprentissage continu et à l'amélioration de nos compétences pour offrir les meilleures solutions possibles.</p>
+            <p>Pour nous contacter, veuillez visiter notre page <a href="contact.html">Contact</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jon - Damien - Nihad</p>
+    </footer>
+
+    <script src="js/theme.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
